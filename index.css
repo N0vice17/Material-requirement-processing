@@ -3,20 +3,21 @@
 * {
     padding: 0px;
     margin: 0px;
+    font-family: 'Roboto', 'sans-serif';
 }
 
 .parentdiv {
     display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-left: 20px;
+    flex-direction: row;
+    /* margin-top: 20px; */
+    height: 85vh;
 }
 
 .parentdiv input {
-    margin-top: 15px;
+    /* margin-top: 15px; */
     margin-right: 10px;
     width: 250px;
-    height: 35px;
+    height: 50px;
     padding-left: 5px;
     border-radius: 3px;
     border: 1px solid black;
@@ -24,9 +25,39 @@
     outline: none;
 }
 
-.material-add,
+.material-available {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+table {
+    display: flex;
+    justify-content: row;
+    border: 1px solid black;
+    margin-top: 35px;
+}
+
+td {
+    text-align: center;
+    border: 1px solid black;
+    width: 120px;
+    font-weight: bolder;
+    height: 30px;
+}
+
+.forms {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .validate {
-    width: 200px;
+    width: 150px;
     height: 50px;
     display: inline-block;
     outline: none;
@@ -35,16 +66,10 @@
     font-weight: 600;
     border-radius: 4px;
     border: 2px solid #222222;
-    transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
     background: #fff;
     color: #222222;
     margin-top: 50px;
     margin-left: 20px;
-}
-
-.material-add:hover {
-    border-color: #000000;
-    background: #f7f7f7;
 }
 
 .navbar {
